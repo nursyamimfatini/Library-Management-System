@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>New registration</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                background-image: url("image/library2.jpg");
+            }
+            .title{
+                font-size: 40%;
+                background-color: blue;
+                margin: auto;
+                height: 40%;
+                width: 60%;
+            }
+            .h1{
+
+                margin: auto;
+                width: 30%;
+                text-align: center;
+                padding: 1%;
+                background-color: white;
+                border-radius: 10px;
+                font-size: 20px;
+            }
+            
+ .button {
+ display: inline-block;
+ border-radius: 7px;
+ border: none;
+ background: #AE8CFA;
+ color: white;
+ font-family: inherit;
+ text-align: center;
+ font-size: 13px;
+ box-shadow: 0px 14px 56px -11px #1875FF;
+ width: 10em;
+ padding: 1em;
+ transition: all 0.4s;
+ cursor: pointer;
+}
+
+.button span {
+ cursor: pointer;
+ display: inline-block;
+ position: relative;
+ transition: 0.4s;
+}
+
+.button span:after {
+ content: '';
+ position: absolute;
+ opacity: 0;
+ top: 0;
+ right: -20px;
+ transition: 0.7s;
+}
+
+.button:hover span {
+ padding-right: 3.55em;
+}
+
+.button:hover span:after {
+ opacity: 4;
+ right: 0;
+}
+.nine h1 {
+  text-align:center; font-size:60px; text-transform:uppercase; color:#222; letter-spacing:1px;
+  font-family:"Playfair Display", serif; font-weight:400;
+}
+.nine h1 span {
+  margin-top: 5px;
+    font-size:15px; color:#444; word-spacing:1px; font-weight:normal; letter-spacing:2px;
+    text-transform: uppercase; font-family:"Raleway", sans-serif; font-weight:500;
+
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 27px 0;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.nine h1 span:after,.nine h1 span:before {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    height: 5px;
+  background-color:#746CFE;
+}
+        </style>
+    </head>
+    <body>
+        <div class="title">REGISTER</div>
+    <center><b>PLEASE REGISTER HERE<br>
+            INSERT YOUR DETAILS BELOW</center></b>
+        <form action="./register" method="POST">
+        <div class="h1">
+        <pre>
+            <center>REGISTER<br></center>
+        IC NUMBER : <input type="text" name="ic"/><br>
+        FIRST NAME: <input type="text" name="first_name"/><br>
+        LAST NAME : <input type="text" name="last_name"/><br>
+        USERNAME  : <input type="text" name="username"/><br>
+        EMAIL     : <input type="text" name="email"/><br>
+        PASSWORD  : <input type="password" name="password"/><br>
+            </pre>
+            
+            <center>
+                <button class="button" style="vertical-align:middle" <input type="submit" name="name"><span>SUBMIT</span></button></a>
+                <button class="button" style="vertical-align:middle" <input type="reset" name="name"><span>RESET</span></button></a>
+        </center>
+         </div>
+        </form>
+    </body>
+</html>

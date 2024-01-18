@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>user menu</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+                background-image: url("image/library2.jpg");
+            }
+            .buttony{
+                border-radius: 30px;
+                color: black;
+                padding: 35px 35px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 15px;
+                cursor: pointer;
+                margin-bottom: 100px;
+                margin-left: 100px;
+                margin-top: 100px;
+                margin-right: 100px;
+                
+            }
+            
+            .button1{
+                background-color: lavender;
+                box-shadow: 0 8px 16px 0;
+            }
+            .button2{
+                background-color:thistle;
+                box-shadow: 0 8px 16px 0;
+            }
+            .button3{
+                background-color: violet;
+                box-shadow: 0 8px 16px 0;
+            }
+            .button4{
+                background-color: plum;
+                box-shadow: 0 8px 16px 0;
+            }
+                  
+            
+            .seven h1 {
+text-align: center;
+    font-size:60px; font-weight:300; color:#222; letter-spacing:1px;
+    text-transform: uppercase;background-color: white; height: 25px;
+
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 27px 0;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.seven h1:after,.seven h1:before {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid #c50000;
+    border-top: 1px solid #c50000;
+    height: 5px;
+  background-color:blueviolet;
+}
+
+.button {
+ display: inline-block;
+ border-radius: 7px;
+ border: none;
+ background: #AE8CFA;
+ color: white;
+ font-family: inherit;
+ text-align: center;
+ font-size: 13px;
+ box-shadow: 0px 10px 40px -11px #1875FF;
+ width: 10em;
+ padding: 1em;
+ transition: all 0.4s;
+ cursor: pointer;
+}
+
+.button span {
+ cursor: pointer;
+ display: inline-block;
+ position: relative;
+ transition: 0.4s;
+}
+
+.button span:after {
+ content: '';
+ position: absolute;
+ opacity: 0;
+ top: 0;
+ right: -20px;
+ transition: 0.7s;
+}
+
+.button:hover span {
+ padding-right: 3.55em;
+}
+
+.button:hover span:after {
+ opacity: 4;
+ right: 0;
+}
+                  </style>
+        
+    </head>
+    <body>
+        <div class="seven"><h1>USER MENU</h1></div>
+        
+            
+                                                  
+
+            <a href="view_book.jsp"><button class="buttony button1">View Book </button></a>
+            <a href="search_book.jsp"><button class="buttony button2">Search Book </button></a>
+            <a href="borrow_book.jsp"><button class="buttony button4">Borrow Book </button><a>
+            <a href="return_book2.jsp"><button class="buttony button3">Return Book </button></a>
+        
+          <center>
+        <a href="/LibManagementSystem/"><button class="button" style="vertical-align:middle"><span>BACK</span></button></a>
+        <a href="log_out.jsp"><button class="button" style="vertical-align:middle"><span>LOG OUT</span></button></a>
+        </center>  
+        
+    </body>
+</html>
